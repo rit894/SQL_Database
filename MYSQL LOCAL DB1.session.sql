@@ -1,6 +1,24 @@
+-- CREATE TABLE student(
+--     student_id INT PRIMARY KEY,
+--     name VARCHAR(20),
+--     major VARCHAR(20)
+-- );
 
-INSERT INTO members (id, name, age, grade) VALUES (1, 'Alice', 30, 'A');
-INSERT INTO members (id, name, age, grade) VALUES (2, 'Bob', 25, 'B');
-INSERT INTO members (id, name, age, grade) VALUES (3, 'Charlie', 35, 'A');
-INSERT INTO members (id, name, age, grade) VALUES (4, 'David', 28, 'C');
-INSERT INTO members (id, name, age, grade) VALUES (5, 'Eve', 22, ' B');
+-- this is used to describe the table and the feilds of the table
+-- DESCRIBE student;
+
+-- this is used to delete the  particular table from the database
+-- DROP TABLE student;
+
+-- this is used to add a new column to the existing table
+-- ALTER TABLE student ADD gpa DECIMAL(3,2);
+-- DESCRIBE student;
+
+SELECT * FROM student;
+
+ -- tHIS IS USED TO
+-- INSERT INTO student VALUES(2, 'kate', 'Chemical Engg', 5.0);
+
+
+
+
