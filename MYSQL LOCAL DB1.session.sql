@@ -35,6 +35,79 @@
 -- SELECT * FROM department;
 -- select * from student;
 
--- ALTER TABLE student 
+-- ALTER TABLE student
 -- DROP FOREIGN KEY student_ibfk_1;
 -- DROP TABLE department;
+
+-- select * from instructor,teaches
+-- where instructor.ID = teaches.ID and department = 'Computer Science';
+
+-- Select distinct T.name
+-- from instructor as T , instructor as S
+-- where T.salary >S.salary and S.department = 'Computer Science';
+
+-- Create table emp_super(
+--     person varchar(20),
+--     supervisior varchar(20)
+-- );
+
+-- insert into emp_super values('Bob','Alice');
+-- insert into emp_super values('Mary','Susan');
+-- insert into emp_super values('Alice','David');
+-- insert into emp_super values('David','Mary');
+
+-- select supervisior
+-- from emp_super
+-- where person='Bob';
+
+-- select supervisior
+-- from emp_super
+-- where person='Alice';
+
+-- String operations
+
+-- select NAME
+-- from instructor
+-- where name like'%dr%';
+
+-- Odering the display of tuples
+-- select DISTINCT name
+-- from instructor
+-- order by name ASC
+
+
+-- (select id from instructor where department='Computer Science')
+-- UNION
+-- (select course_id from teaches WHERE semester='Fall');
+
+
+-- SELECT id
+-- FROM instructor
+-- WHERE department = 'Computer Science'
+-- AND id IN (
+--     SELECT course_id
+--     FROM teaches
+--     WHERE semester = 'Fall'
+-- );
+
+-- SELECT id
+-- FROM instructor
+-- WHERE department = 'Computer Science'
+-- AND id  not IN (
+--     SELECT course_id
+--     FROM teaches
+--     WHERE semester = 'Fall'
+-- );
+
+-- select *
+-- from instructor;
+-- select *
+-- from teaches
+
+
+
+
+
+
+
+
